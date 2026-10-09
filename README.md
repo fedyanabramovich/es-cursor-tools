@@ -1,13 +1,12 @@
 # es-cursor-tools
 
-Магазин плагинов Cursor. Сейчас в нём один плагин `placeholder`.
+Плагин Cursor. Внутри один навык `placeholder`.
 
 ## Установка
 
-1. В Cursor откройте Customize → Add Marketplace.
+1. В Cursor откройте Customize и добавьте плагин через From GitHub Repository.
 2. Вставьте `https://github.com/fedyanabramovich/es-cursor-tools`.
-3. Установите плагин `placeholder`.
 
 ## Использование
 
-Навык `placeholder` ничего не выполняет. Если он доступен агенту, магазин подключён.
+Навык `placeholder` ничего не выполняет. Если он доступен агенту, плагин установлен.
