@@ -4,8 +4,7 @@
     "name": "fedyanabramovich"
   },
   "metadata": {
-    "description": "Инструменты Cursor команды",
-    "pluginRoot": "plugins"
+    "description": "Инструменты Cursor команды"
   },
   "plugins": [
     {

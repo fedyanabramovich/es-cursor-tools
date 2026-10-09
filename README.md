@@ -1,13 +1,13 @@
 # es-cursor-tools
 
-Пустой магазин плагинов Cursor. Сейчас в нём один плагин `placeholder`, чтобы проверить подключение team marketplace.
+Магазин плагинов Cursor. Сейчас в нём один плагин `placeholder`.
 
-## Подключить
+## Установка
 
-1. Откройте [Dashboard → Plugins & MCPs](https://cursor.com/dashboard/plugins).
-2. Team Marketplaces → Add Marketplace → Import from Repo.
-3. Вставьте `https://github.com/fedyanabramovich/es-cursor-tools`.
-4. Cursor должен показать один плагин: `placeholder`.
-5. Включите его команде (Default On или Required) и установите из Customize.
+1. В Cursor откройте Customize → Add Marketplace.
+2. Вставьте `https://github.com/fedyanabramovich/es-cursor-tools`.
+3. Установите плагин `placeholder`.
 
-Навык `placeholder` ничего не делает. Если он виден после установки, магазин подключён.
+## Использование
+
+Навык `placeholder` ничего не выполняет. Если он доступен агенту, магазин подключён.
