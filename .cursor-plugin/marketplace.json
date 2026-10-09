@@ -1,0 +1,17 @@
+{
+  "name": "es-cursor-tools",
+  "owner": {
+    "name": "fedyanabramovich"
+  },
+  "metadata": {
+    "description": "Инструменты Cursor команды",
+    "pluginRoot": "plugins"
+  },
+  "plugins": [
+    {
+      "name": "placeholder",
+      "source": "placeholder",
+      "description": "Пустой плагин для проверки подключения магазина"
+    }
+  ]
+}
