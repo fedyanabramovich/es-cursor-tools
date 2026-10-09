@@ -8,9 +8,9 @@
   },
   "plugins": [
     {
-      "name": "placeholder",
-      "source": "placeholder",
-      "description": "Пустой плагин для проверки установки"
+      "name": "isivr",
+      "source": "isivr",
+      "description": "Сборка приложений и администрирование ISIVR"
     }
   ]
 }

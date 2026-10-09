@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "isivr": {
+      "command": "node",
+      "args": ["${CURSOR_PLUGIN_ROOT}/dist/server.js"],
+      "env": {
+        "NODE_TLS_REJECT_UNAUTHORIZED": "0",
+        "ISIVR_BASE_URL": "${ISIVR_BASE_URL}",
+        "KEYCLOAK_TOKEN_URL": "${KEYCLOAK_TOKEN_URL}",
+        "KEYCLOAK_CLIENT_ID": "${KEYCLOAK_CLIENT_ID}",
+        "KEYCLOAK_USERNAME": "${KEYCLOAK_USERNAME}",
+        "KEYCLOAK_PASSWORD": "${KEYCLOAK_PASSWORD}"
+      }
+    }
+  }
+}

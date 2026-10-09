@@ -1,0 +1,298 @@
+[
+  {
+    "id": "Calendar_GetCalendar",
+    "method": "POST",
+    "path": "Calendar/GetCalendar",
+    "summary": "Календарь рабочих часов по id. Type = 1. Тело {id}. id = 0 — шаблон.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Calendar_SaveCalendar",
+    "method": "POST",
+    "path": "Calendar/SaveCalendar",
+    "summary": "Создать или обновить календарь (Type 1) либо нерабочий период (Type 2).",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Calendar_DeleteCalendar",
+    "method": "POST",
+    "path": "Calendar/DeleteCalendar",
+    "summary": "Удалить календарь или нерабочий период. Тело {id}.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Calendar_GetHolidayPeriod",
+    "method": "POST",
+    "path": "Calendar/GetHolidayPeriod",
+    "summary": "Нерабочий период по id. Type = 2. Тело {id}. id = 0 — шаблон.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Calendar_GetCalendarSelectData",
+    "method": "POST",
+    "path": "Calendar/GetCalendarSelectData",
+    "summary": "Список календарей рабочих часов, Select2. Тело {q}.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Calendar_GetHolidayPeriodSelectData",
+    "method": "POST",
+    "path": "Calendar/GetHolidayPeriodSelectData",
+    "summary": "Список нерабочих периодов, Select2. Тело {q}.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Calendar_GetTimezones",
+    "method": "POST",
+    "path": "Calendar/GetTimezones",
+    "summary": "Список часовых поясов, Select2. Тела нет. Для новых календарей используй Russian Standard Time.",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "Calendar_GetCalendarTree",
+    "method": "POST",
+    "path": "Calendar/GetCalendarTree",
+    "summary": "Дерево календарей проводника. Тело — фильтр проводника и offset.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Audio_GetGroup",
+    "method": "POST",
+    "path": "Audio/GetGroup",
+    "summary": "Звук по DataID. Тело {GroupDataID, ContainerID, AllowAutoImportFromDefault, Force}.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Audio_EditGroup",
+    "method": "POST",
+    "path": "Audio/EditGroup",
+    "summary": "Создать или изменить метаданные звука. Тело — объект звука. Файл загружается через isivr_upload_sound.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Audio_GetSoundGroupTree",
+    "method": "POST",
+    "path": "Audio/GetSoundGroupTree",
+    "summary": "Дерево звуков приложения. Тело включает appID, filter, containerID, offset, q.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Audio_GetContainerSelectData",
+    "method": "POST",
+    "path": "Audio/GetContainerSelectData",
+    "summary": "Контейнеры аудио приложения, Select2. Тело {appID, q}. appID — ID или DataID приложения.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Audio_GetGroupsSelectData",
+    "method": "POST",
+    "path": "Audio/GetGroupsSelectData",
+    "summary": "Звуки приложения для выбора в блоке, Select2. Тело {ApplicationDataID, Q}.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Audio_GetGroupsForImport",
+    "method": "POST",
+    "path": "Audio/GetGroupsForImport",
+    "summary": "Звуки приложения, которых нет в контейнере. Query: applicationDataID, containerID, q.",
+    "query": ["applicationDataID", "containerID", "q"],
+    "body": false
+  },
+  {
+    "id": "Audio_GetContainerParams",
+    "method": "POST",
+    "path": "Audio/GetContainerParams",
+    "summary": "Параметры аудиоконтейнера. Query: id, appDataID.",
+    "query": ["id", "appDataID"],
+    "body": false
+  },
+  {
+    "id": "Audio_SaveContainerParams",
+    "method": "POST",
+    "path": "Audio/SaveContainerParams",
+    "summary": "Сохранить аудиоконтейнер. Тело — объект контейнера.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Audio_DeleteContainer",
+    "method": "POST",
+    "path": "Audio/DeleteContainer",
+    "summary": "Удалить аудиоконтейнер. Query: id.",
+    "query": ["id"],
+    "body": false
+  },
+  {
+    "id": "Audio_RemoveSoundGroup",
+    "method": "POST",
+    "path": "Audio/RemoveSoundGroup",
+    "summary": "Удалить звук. Тело {id}.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Audio_ImportAudio",
+    "method": "POST",
+    "path": "Audio/ImportAudio",
+    "summary": "Импортировать звук в контейнер. Query: groupID, containerID.",
+    "query": ["groupID", "containerID"],
+    "body": false
+  },
+  {
+    "id": "Audio_ImportAudioToApp",
+    "method": "POST",
+    "path": "Audio/ImportAudioToApp",
+    "summary": "Скопировать звуки между приложениями. Query: fromAppDataID, toAppDataID, groupDataIDs (массив).",
+    "query": ["fromAppDataID", "toAppDataID", "groupDataIDs"],
+    "body": false
+  },
+  {
+    "id": "DynamicParams_GetCategory",
+    "method": "POST",
+    "path": "DynamicParams/GetCategory",
+    "summary": "Категория динамических параметров по id. Тело {id}. id = 0 — шаблон.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicParams_SaveCategory",
+    "method": "POST",
+    "path": "DynamicParams/SaveCategory",
+    "summary": "Создать или обновить категорию динамических параметров. Общая для всех приложений.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicParams_DeleteCategory",
+    "method": "POST",
+    "path": "DynamicParams/DeleteCategory",
+    "summary": "Удалить категорию динамических параметров. Тело {id}.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicParams_GetCategoriesTree",
+    "method": "POST",
+    "path": "DynamicParams/GetCategoriesTree",
+    "summary": "Дерево категорий динамических параметров.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicParams_GetGroupsSelectData",
+    "method": "POST",
+    "path": "DynamicParams/GetGroupsSelectData",
+    "summary": "Список категорий динамических параметров, Select2. Тела нет.",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "DynamicParams_GetCategoryParamsSelectData",
+    "method": "POST",
+    "path": "DynamicParams/GetCategoryParamsSelectData",
+    "summary": "Параметры одной категории, Select2. Тело {id} — ID категории.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Function_GetFunctionsSelectData",
+    "method": "POST",
+    "path": "Function/GetFunctionsSelectData",
+    "summary": "Функции для блока Function, Select2. Тело {applicationID, q, onlyUsed, useDataIDAsID}.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Function_GetFunctionTree",
+    "method": "POST",
+    "path": "Function/GetFunctionTree",
+    "summary": "Дерево справочника функций.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Function_Save",
+    "method": "POST",
+    "path": "Function/Save",
+    "summary": "Сохранить функцию. Тело {Template, AsVersion}: Template — JSON функции строкой. Общая для всех приложений.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Function_RemoveFunction",
+    "method": "POST",
+    "path": "Function/RemoveFunction",
+    "summary": "Удалить все версии функции. Тело {ID}.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "RoutingTable_GetRoutingTable",
+    "method": "POST",
+    "path": "RoutingTable/GetRoutingTable",
+    "summary": "Таблица маршрутизации по id вместе со строками. Тело {id}. id = 0 — шаблон.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "RoutingTable_SaveRoutingTable",
+    "method": "POST",
+    "path": "RoutingTable/SaveRoutingTable",
+    "summary": "Создать или обновить таблицу маршрутизации.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "RoutingTable_DeleteCategory",
+    "method": "POST",
+    "path": "RoutingTable/DeleteCategory",
+    "summary": "Удалить таблицу маршрутизации. Query: id.",
+    "query": ["id"],
+    "body": false
+  },
+  {
+    "id": "RoutingTable_GetRoutesTree",
+    "method": "POST",
+    "path": "RoutingTable/GetRoutesTree",
+    "summary": "Дерево таблиц маршрутизации.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "RoutingTable_GetGroupsSelectData",
+    "method": "POST",
+    "path": "RoutingTable/GetGroupsSelectData",
+    "summary": "Таблицы маршрутизации для блока DefRouting, Select2. Тело {q}.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "RoutingTable_SaveRoute",
+    "method": "POST",
+    "path": "RoutingTable/SaveRoute",
+    "summary": "Создать или обновить строку таблицы маршрутизации.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "RoutingTable_DeleteRoute",
+    "method": "POST",
+    "path": "RoutingTable/DeleteRoute",
+    "summary": "Удалить строку таблицы маршрутизации. Тело {id}.",
+    "query": [],
+    "body": true
+  }
+]

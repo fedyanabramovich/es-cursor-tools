@@ -1,0 +1,43 @@
+{
+  "name": "isivr",
+  "version": "0.1.0",
+  "description": "Собирает приложения дизайнера ISIVR и администрирует платформу через API.",
+  "author": {
+    "name": "fedyanabramovich"
+  },
+  "repository": "https://github.com/fedyanabramovich/es-cursor-tools",
+  "keywords": ["isivr", "ivr"],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "ISIVR_BASE_URL": {
+        "type": "string",
+        "title": "Адрес ISIVR",
+        "description": "Базовый URL стенда без завершающего слэша. Подставлен пример, замените его адресом своего стенда.",
+        "default": "https://isivr.example.net"
+      },
+      "KEYCLOAK_TOKEN_URL": {
+        "type": "string",
+        "title": "Адрес Keycloak",
+        "description": "Полный URL получения токена. Подставлен пример, замените его адресом своего контура.",
+        "default": "https://keycloak.example.net/realms/example/protocol/openid-connect/token"
+      },
+      "KEYCLOAK_CLIENT_ID": {
+        "type": "string",
+        "title": "Клиент Keycloak",
+        "description": "Идентификатор клиента. Подставлен пример, замените его клиентом своего контура.",
+        "default": "client"
+      },
+      "KEYCLOAK_USERNAME": {
+        "type": "string",
+        "title": "Логин Keycloak",
+        "description": "Учётная запись, которой открывается стенд ISIVR"
+      },
+      "KEYCLOAK_PASSWORD": {
+        "type": "string",
+        "title": "Пароль Keycloak"
+      }
+    },
+    "required": ["ISIVR_BASE_URL", "KEYCLOAK_TOKEN_URL", "KEYCLOAK_CLIENT_ID", "KEYCLOAK_USERNAME", "KEYCLOAK_PASSWORD"]
+  }
+}

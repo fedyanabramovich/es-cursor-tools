@@ -1,0 +1,862 @@
+[
+  {
+    "id": "Access_GetUser",
+    "method": "POST",
+    "path": "Access/GetUser",
+    "summary": "Получить пользователя по идентификатору (0 — шаблон для создания).",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Access_SaveUser",
+    "method": "POST",
+    "path": "Access/SaveUser",
+    "summary": "Создать или обновить пользователя.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Access_DeleteUser",
+    "method": "POST",
+    "path": "Access/DeleteUser",
+    "summary": "Удалить пользователя по идентификатору.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Access_GetRole",
+    "method": "POST",
+    "path": "Access/GetRole",
+    "summary": "Получить роль по идентификатору (0 — шаблон для создания).",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Access_SaveRole",
+    "method": "POST",
+    "path": "Access/SaveRole",
+    "summary": "Создать или обновить роль.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Access_DeleteRole",
+    "method": "POST",
+    "path": "Access/DeleteRole",
+    "summary": "Удалить роль по идентификатору.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Access_GetRolesSelectData",
+    "method": "POST",
+    "path": "Access/GetRolesSelectData",
+    "summary": "Данные для выбора роли: список (id / name) в формате Select2.",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "Access_Logout",
+    "method": "GET",
+    "path": "Access/Logout",
+    "summary": "Выход из приложения (редирект на провайдер).",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "Access_KeepLogin",
+    "method": "POST",
+    "path": "Access/KeepLogin",
+    "summary": "Продление сессии (пустой 200 OK).",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "Api_GetAppNumbersMapping",
+    "method": "GET",
+    "path": "Api/GetAppNumbersMapping",
+    "summary": "Возвращает маппинг номеров на приложения для указанного хоста.",
+    "query": [
+      "host"
+    ],
+    "body": false
+  },
+  {
+    "id": "Api_GetRoutingsByNumber",
+    "method": "GET",
+    "path": "Api/GetRoutingsByNumber",
+    "summary": "Возвращает маршрутизацию по номеру для указанной таблицы.",
+    "query": [
+      "tableID",
+      "defNumber"
+    ],
+    "body": false
+  },
+  {
+    "id": "Api_GetCalendarOffset",
+    "method": "GET",
+    "path": "Api/GetCalendarOffset",
+    "summary": "Возвращает смещение календаря в тиках для указанного календаря.",
+    "query": [
+      "calendarID"
+    ],
+    "body": false
+  },
+  {
+    "id": "Api_GetCalendarParamsByDay",
+    "method": "GET",
+    "path": "Api/GetCalendarParamsByDay",
+    "summary": "Возвращает параметры календаря.",
+    "query": [
+      "calendarID",
+      "dayOfWeek"
+    ],
+    "body": false
+  },
+  {
+    "id": "Api_GetHolidayParamsByDay",
+    "method": "GET",
+    "path": "Api/GetHolidayParamsByDay",
+    "summary": "Возвращает параметры нерабочего времени.",
+    "query": [
+      "calendarID",
+      "date"
+    ],
+    "body": false
+  },
+  {
+    "id": "Api_GetDynamicListItemValue",
+    "method": "GET",
+    "path": "Api/GetDynamicListItemValue",
+    "summary": "Возвращает элемент динамического списка по идентификатору списка и имени элемента.",
+    "query": [
+      "listID",
+      "itemName"
+    ],
+    "body": false
+  },
+  {
+    "id": "Api_SetDynamicParam",
+    "method": "POST",
+    "path": "Api/SetDynamicParam",
+    "summary": "Изменяет динамические параметры",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Api_GetAllActiveApplications",
+    "method": "GET",
+    "path": "Api/GetAllActiveApplications",
+    "summary": "Возвращает метаданные всех активных приложений.",
+    "query": [
+      "groups"
+    ],
+    "body": false
+  },
+  {
+    "id": "Api_GetTree",
+    "method": "GET",
+    "path": "Api/GetTree",
+    "summary": "Возвращает дерево приложения (блоки и переменные) по идентификатору приложения.",
+    "query": [
+      "appId"
+    ],
+    "body": false
+  },
+  {
+    "id": "Api_GetDynamicAudioGroups",
+    "method": "GET",
+    "path": "Api/GetDynamicAudioGroups",
+    "summary": "Возвращает список динамических звуков",
+    "query": [
+      "appId"
+    ],
+    "body": false
+  },
+  {
+    "id": "Application_Edit",
+    "method": "POST",
+    "path": "Application/Edit",
+    "summary": "Создать или обновить приложение.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_Clone",
+    "method": "POST",
+    "path": "Application/Clone",
+    "summary": "Клонировать приложение.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_Get",
+    "method": "POST",
+    "path": "Application/Get",
+    "summary": "Получить приложение по идентификатору.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_GetLastVersion",
+    "method": "POST",
+    "path": "Application/GetLastVersion",
+    "summary": "Получить последнюю версию приложения по идентификатору.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_Delete",
+    "method": "POST",
+    "path": "Application/Delete",
+    "summary": "Удалить приложение по идентификатору.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_DeleteAllVersions",
+    "method": "POST",
+    "path": "Application/DeleteAllVersions",
+    "summary": "Удалить все версии приложения по идентификатору.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_GetSelectData",
+    "method": "POST",
+    "path": "Application/GetSelectData",
+    "summary": "Получить данные для выпадающего списка приложений (формат Select2).",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_GetVersionsSelectData",
+    "method": "POST",
+    "path": "Application/GetVersionsSelectData",
+    "summary": "Получить данные для выпадающего списка версий приложения (формат Select2).",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_SaveAll",
+    "method": "POST",
+    "path": "Application/SaveAll",
+    "summary": "Сохранить все модули (меню) приложения.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_SaveAsStable",
+    "method": "POST",
+    "path": "Application/SaveAsStable",
+    "summary": "Сохранить текущую версию приложения как стабильную.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_GetModule",
+    "method": "POST",
+    "path": "Application/GetModule",
+    "summary": "Получить модуль (меню) приложения по DataId и идентификатору приложения.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_GetFunction",
+    "method": "POST",
+    "path": "Application/GetFunction",
+    "summary": "Получить функцию приложения по DataId и идентификатору приложения.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_GetApplicationTree",
+    "method": "POST",
+    "path": "Application/GetApplicationTree",
+    "summary": "Получить узлы дерева приложений.",
+    "query": [
+      "type",
+      "id",
+      "appID",
+      "offset",
+      "q",
+      "take"
+    ],
+    "body": false
+  },
+  {
+    "id": "Application_GetAppList",
+    "method": "POST",
+    "path": "Designer/GetAppList",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Application_FindBlocks",
+    "method": "POST",
+    "path": "Designer/FindBlocks",
+    "summary": "",
+    "query": [
+      "appID",
+      "q"
+    ],
+    "body": false
+  },
+  {
+    "id": "Application_List",
+    "method": "GET",
+    "path": "Application/List",
+    "summary": "Получить список всех стабильных версий приложений.",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "ApplicationGroup_GetGroup",
+    "method": "POST",
+    "path": "Application/GetGroup",
+    "summary": "Получить группу приложений по идентификатору (0 — шаблон для создания).",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ApplicationGroup_EditGroup",
+    "method": "POST",
+    "path": "Application/EditGroup",
+    "summary": "Создать или обновить группу приложений.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ApplicationGroup_DeleteGroup",
+    "method": "POST",
+    "path": "Application/DeleteGroup",
+    "summary": "Удалить группу приложений по идентификатору.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ApplicationGroup_GetGroupsSelectData",
+    "method": "POST",
+    "path": "Application/GetGroupsSelectData",
+    "summary": "Получить данные для выпадающего списка групп приложений (формат Select2).",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Data_GetSkillList",
+    "method": "POST",
+    "path": "Designer/GetSkillList",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Data_GetRouteList",
+    "method": "POST",
+    "path": "Designer/GetRouteList",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Data_GetDirectionTypeList",
+    "method": "POST",
+    "path": "Designer/GetDirectionTypeList",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Designer_Save",
+    "method": "POST",
+    "path": "Designer/Save",
+    "summary": "Создать или обновить модуль.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Designer_Get",
+    "method": "POST",
+    "path": "Designer/Get",
+    "summary": "Получить модуль по идентификатору.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Designer_Delete",
+    "method": "POST",
+    "path": "Designer/Delete",
+    "summary": "Удалить модуль по идентификатору.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Designer_DeleteAllVersions",
+    "method": "POST",
+    "path": "Designer/DeleteAllVersions",
+    "summary": "Удалить все версии модуля.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Designer_GetVariablesList",
+    "method": "POST",
+    "path": "Designer/GetVariablesList",
+    "summary": "Получить список переменных приложения для выбранного модуля.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Designer_GetVariables",
+    "method": "POST",
+    "path": "Designer/GetVariables",
+    "summary": "Получить список переменных текущего модуля.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Designer_Validate",
+    "method": "POST",
+    "path": "Designer/Validate",
+    "summary": "Выполнить валидацию модуля.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Designer_GetModulesSelectData",
+    "method": "POST",
+    "path": "Designer/GetModulesSelectData",
+    "summary": "Получить данные для списка модулей (Select2).",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Designer_GetModuleVersionsSelectData",
+    "method": "POST",
+    "path": "Designer/GetModuleVersionsSelectData",
+    "summary": "Получить данные для списка версий модуля (Select2).",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Designer_Ping",
+    "method": "GET",
+    "path": "Designer/Ping",
+    "summary": "Проверка доступности контроллера.",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "DynamicLists_Get",
+    "method": "POST",
+    "path": "DynamicLists/Get",
+    "summary": "Получить динамический список по идентификатору (0 - шаблон для создания).",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicLists_GetListSelectData",
+    "method": "POST",
+    "path": "DynamicLists/GetListSelectData",
+    "summary": "Получить данные для выпадающего списка динамических списков (формат Select2).",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicLists_Save",
+    "method": "POST",
+    "path": "DynamicLists/Save",
+    "summary": "Создать или обновить динамический список.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicLists_Delete",
+    "method": "POST",
+    "path": "DynamicLists/Delete",
+    "summary": "Удалить динамический список по идентификатору.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicLists_CrearList",
+    "method": "POST",
+    "path": "DynamicLists/CrearList",
+    "summary": "Очистить все элементы динамического списка.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicLists_GetItem",
+    "method": "POST",
+    "path": "DynamicLists/GetItem",
+    "summary": "Получить элемент динамического списка по идентификатору (0 - шаблон для создания).",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicLists_SaveItem",
+    "method": "POST",
+    "path": "DynamicLists/SaveItem",
+    "summary": "Создать или обновить элемент динамического списка.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicLists_MoveItems",
+    "method": "POST",
+    "path": "DynamicLists/MoveItems",
+    "summary": "Перенести элементы в другой динамический список.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicLists_DeleteItem",
+    "method": "POST",
+    "path": "DynamicLists/DeleteItem",
+    "summary": "Удалить элемент динамического списка по идентификатору.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicLists_DeleteListItems",
+    "method": "POST",
+    "path": "DynamicLists/DeleteListItems",
+    "summary": "Удалить несколько элементов динамического списка.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicLists_GetImportNumbersItemsTemplate",
+    "method": "GET",
+    "path": "DynamicLists/GetImportNumbersItemsTemplate",
+    "summary": "Скачать шаблон Excel для импорта номеров.",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "DynamicLists_GetImportKeyValueItemsTemplate",
+    "method": "GET",
+    "path": "DynamicLists/GetImportKeyValueItemsTemplate",
+    "summary": "Скачать шаблон Excel для импорта ключей и значений.",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "DynamicLists_DownloadNumbersItems",
+    "method": "GET",
+    "path": "DynamicLists/DownloadNumbersItems",
+    "summary": "Скачать элементы списка номеров в формате Excel.",
+    "query": [
+      "listID",
+      "GmtOffset"
+    ],
+    "body": false
+  },
+  {
+    "id": "DynamicLists_DownloadKeyValueItems",
+    "method": "GET",
+    "path": "DynamicLists/DownloadKeyValueItems",
+    "summary": "Скачать элементы списка ключ-значение в формате Excel.",
+    "query": [
+      "listID",
+      "GmtOffset"
+    ],
+    "body": false
+  },
+  {
+    "id": "DynamicLists_ImportDynamicListItems",
+    "method": "POST",
+    "path": "DynamicLists/ImportDynamicListItems",
+    "summary": "Импортировать элементы динамического списка из файла.",
+    "query": [
+      "Name",
+      "Type",
+      "Items",
+      "IsDeleted",
+      "DeleteDT",
+      "DeletedBy"
+    ],
+    "body": false
+  },
+  {
+    "id": "DynamicLists_GetBlackList",
+    "method": "GET",
+    "path": "DynamicLists/GetBlackList",
+    "summary": "Получить динамические списки типа \"черный список\".",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "DynamicLists_GetWhiteList",
+    "method": "GET",
+    "path": "DynamicLists/GetWhiteList",
+    "summary": "Получить динамические списки типа \"белый список\".",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "DynamicLists_GetAutoAdd",
+    "method": "POST",
+    "path": "DynamicLists/GetAutoAdd",
+    "summary": "Получить настройки автодобавления в динамические списки.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "DynamicLists_SaveAutoAdd",
+    "method": "POST",
+    "path": "DynamicLists/SaveAutoAdd",
+    "summary": "Сохранить настройки автодобавления в динамические списки.",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "File_Get",
+    "method": "GET",
+    "path": "api/file/{id}",
+    "summary": "Возвращает информацию о файле по идентификатору.",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "File_Add",
+    "method": "PUT",
+    "path": "api/file/add",
+    "summary": "Загружает новый файл.",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "File_Delete",
+    "method": "DELETE",
+    "path": "api/file/delete/{id}",
+    "summary": "Удаляет файл по идентификатору.",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "Function_GetFunctionVersionsSelectData",
+    "method": "POST",
+    "path": "Designer/GetFunctionVersionsSelectData",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Publish_GetTaskItemStatusSelectData",
+    "method": "POST",
+    "path": "Server/GetTaskItemStatusSelectData",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Publish_GetTasksSelectData",
+    "method": "POST",
+    "path": "Server/GetTasksSelectData",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Publish_CreatePublishTask",
+    "method": "POST",
+    "path": "Server/CreatePublishTask",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Publish_CheckPublishTaskConflicts",
+    "method": "POST",
+    "path": "Server/CheckPublishTaskConflicts",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Publish_RollbackTask",
+    "method": "POST",
+    "path": "Server/RollbackTask",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Publish_RepeatTask",
+    "method": "POST",
+    "path": "Server/RepeatTask",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Publish_GetPublishTaskItemsTree",
+    "method": "POST",
+    "path": "Server/GetPublishTaskItemsTree",
+    "summary": "",
+    "query": [
+      "OrderCol",
+      "OrderIsAsc",
+      "Mode",
+      "GroupingMode",
+      "ClusterID"
+    ],
+    "body": false
+  },
+  {
+    "id": "Publish_SetPublishTaskItemStatus",
+    "method": "POST",
+    "path": "Server/SetPublishTaskItemStatus",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Server_Get",
+    "method": "POST",
+    "path": "Server/Get",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Server_Save",
+    "method": "POST",
+    "path": "Server/Save",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Server_GetServers",
+    "method": "POST",
+    "path": "Server/GetServers",
+    "summary": "",
+    "query": [
+      "groupID",
+      "q"
+    ],
+    "body": false
+  },
+  {
+    "id": "Server_GetNumbers",
+    "method": "POST",
+    "path": "Server/GetNumbers",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "Server_DeleteServer",
+    "method": "POST",
+    "path": "Server/DeleteServer",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ServerCluster_GetCluster",
+    "method": "POST",
+    "path": "Server/GetCluster",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ServerCluster_GetClustersSelectData",
+    "method": "POST",
+    "path": "Server/GetClustersSelectData",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ServerCluster_SaveCluster",
+    "method": "POST",
+    "path": "Server/SaveCluster",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ServerCluster_CheckAssignServers",
+    "method": "POST",
+    "path": "Server/CheckAssignServers",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ServerCluster_GetClusterNumbers",
+    "method": "POST",
+    "path": "Server/GetClusterNumbers",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ServerCluster_DeleteCluster",
+    "method": "POST",
+    "path": "Server/DeleteCluster",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ServerGroup_GetGroup",
+    "method": "POST",
+    "path": "Server/GetGroup",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ServerGroup_GetGroupsSelectData",
+    "method": "POST",
+    "path": "Server/GetGroupsSelectData",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ServerGroup_SaveGroup",
+    "method": "POST",
+    "path": "Server/SaveGroup",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ServerGroup_DeleteServerGroup",
+    "method": "POST",
+    "path": "Server/DeleteServerGroup",
+    "summary": "",
+    "query": [],
+    "body": true
+  },
+  {
+    "id": "ServerGroup_GetImportServerGroupTemplate",
+    "method": "GET",
+    "path": "Server/GetImportServerGroupTemplate",
+    "summary": "",
+    "query": [],
+    "body": false
+  },
+  {
+    "id": "ServerGroup_ImportServerGroup",
+    "method": "POST",
+    "path": "Server/ImportServerGroup",
+    "summary": "",
+    "query": [
+      "FileName",
+      "ContentType",
+      "ContentLength",
+      "InputStream.CanRead",
+      "InputStream.CanWrite"
+    ],
+    "body": false
+  }
+]

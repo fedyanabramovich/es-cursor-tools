@@ -1,0 +1,15 @@
+{
+  "name": "isivr-mcp",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "operations": "node scripts/extract-operations.js",
+    "bundle": "esbuild server.js --bundle --platform=node --outfile=../dist/server.js"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.3.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.10"
+  }
+}
