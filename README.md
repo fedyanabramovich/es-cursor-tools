@@ -1,11 +1,12 @@
 # es-cursor-tools
 
-Плагин Cursor. Внутри один навык `placeholder`.
+Магазин плагинов Cursor. Сейчас в нём один плагин `placeholder`.
 
 ## Установка
 
-1. В Cursor откройте Customize и добавьте плагин через From GitHub Repository.
-2. Вставьте `https://github.com/fedyanabramovich/es-cursor-tools`.
+1. В Cursor откройте Customize → Add → From GitHub Repository.
+2. Вставьте `github.com/fedyanabramovich/es-cursor-tools`, Scope: User.
+3. Установите плагин `placeholder`.
 
 ## Использование
 

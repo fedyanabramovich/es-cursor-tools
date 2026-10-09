@@ -1,0 +1,16 @@
+{
+  "name": "es-cursor-tools",
+  "owner": {
+    "name": "fedyanabramovich"
+  },
+  "metadata": {
+    "description": "Инструменты Cursor команды"
+  },
+  "plugins": [
+    {
+      "name": "placeholder",
+      "source": "placeholder",
+      "description": "Пустой плагин для проверки установки"
+    }
+  ]
+}
