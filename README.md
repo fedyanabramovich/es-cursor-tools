@@ -4,9 +4,12 @@
 
 ## Установка
 
-1. В Cursor откройте Customize → Add → From GitHub Repository.
-2. Вставьте `github.com/fedyanabramovich/es-cursor-tools`, Scope: User.
-3. Установите плагин `placeholder`.
+1. Откройте Customize в боковой панели Cursor.
+2. Нажмите **+ Add Marketplace**.
+3. В поле **Repository** вставьте `github.com/fedyanabramovich/es-cursor-tools` без `https://`.
+4. В **Scope** оставьте **User** и нажмите **Import**.
+5. Откройте вкладку **Personal**. Появится блок **Fedyanabramovich Es Cursor Tools**.
+6. У плагина `placeholder` нажмите **Add**.
 
 ## Использование
 
