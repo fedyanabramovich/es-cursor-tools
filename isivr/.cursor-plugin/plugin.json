@@ -26,7 +26,7 @@
         "type": "string",
         "title": "Клиент Keycloak",
         "description": "Идентификатор клиента. Подставлен пример, замените его клиентом своего контура.",
-        "default": "client"
+        "default": "isivr"
       },
       "KEYCLOAK_USERNAME": {
         "type": "string",

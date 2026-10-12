@@ -64,7 +64,7 @@
 ```text
 Адрес ISIVR:     https://isivr.example.net
 Адрес Keycloak:  https://keycloak.example.net/realms/example/protocol/openid-connect/token
-Клиент Keycloak: client
+Клиент Keycloak: isivr
 Логин Keycloak:  ivanov1
 Пароль Keycloak: ваш пароль
 ```
